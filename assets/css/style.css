@@ -1,0 +1,91 @@
+:root {
+  --primary: #0F3057;
+  --accent: #E36488;
+  --background: #F4F7FA;
+  --text: #1F2933;
+  --white: #ffffff;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: var(--background);
+  color: var(--text);
+  margin: 0;
+}
+
+/* HEADER */
+.site-header {
+  background: var(--primary);
+  padding: 1rem 0;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: var(--accent);
+}
+
+/* HERO */
+.hero--misty {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 8%;
+  background: white;
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.btn {
+  background: var(--accent);
+  color: white;
+  padding: 0.8rem 1.4rem;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-right: 1rem;
+  display: inline-block;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+}
+
+.section-light {
+  padding: 3rem 10%;
+  text-align: center;
+}
+
+.section-dark {
+  background: var(--primary);
+  color: white;
+  padding: 3rem 10%;
+  text-align: center;
+}
+
+/* Enhancement Cards */
+.enhancement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 3rem 10%;
+}
+
+.enhancement-card {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.enhancement-card:hover {
+  transform: translateY(-5px);
+}
