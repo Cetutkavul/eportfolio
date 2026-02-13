@@ -59,13 +59,3 @@
 })();
 
 
-// Modals (open/close)
-(function () {
-    function openModal(targetSel) {
-        const modal = document.querySelector(targetSel);
-        if (!modal) return;
-        modal.hidden = false;
-            modal.querySelector('[data-modal-close]')?.focus();
-        }
-        // Example usage: openModal('#myModal');
-    }) ();

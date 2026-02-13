@@ -4,19 +4,19 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Artifacts • Burak Tutkavul</title>
+  <title>Artifacts • Cisem “Misty” Tutkavul</title>
   <meta name="description"
-    content="Three curated artifacts with evidence, reflections, and competencies demonstrated." />
+    content="Three curated artifacts demonstrating software engineering, algorithms, and database systems." />
+  <meta name="theme-color" content="#0F3057">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css" />
-  <link rel="icon" href="favicon.ico" />
 </head>
 
 <body>
-  <!-- HEADER -->
-  <header class="site-header" role="banner">
+
+  <header class="site-header">
     <nav>
       <ul class="nav">
         <li><a href="index.html">Home</a></li>
@@ -26,118 +26,144 @@
     </nav>
   </header>
 
-  <main id="content" tabindex="-1">
+  <main>
+
     <section class="page-header">
       <h1>Artifacts</h1>
-      <p class="lead">Three curated works demonstrating security, data, and Android development competencies.</p>
+      <p class="lead">
+        Three enhanced academic artifacts demonstrating structured development,
+        data validation, system efficiency, and database implementation aligned with
+        business-driven environments.
+      </p>
     </section>
 
-    <!-- Row of centered cards -->
-    <section class="artifact-list grid three">
+    <section class="enhancement-grid">
 
       <!-- Artifact 1 -->
-      <article class="card">
-        <h2>Mobile Architecture and Programming</h2>
-        <h3>Inventory Tracking App (Android / Java – InvenTrack)</h3>
+      <article class="enhancement-card">
+        <h3>Software Design & Engineering</h3>
+        <h4>CS-340 Project One – CRUD Validation Test Script</h4>
+
         <p>
-          Mobile application that helps users sign in and manage item quantities with a simple, accessible interface.
+          This enhancement focused on improving the original CRUD validation script
+          by strengthening modular structure, refining validation logic, and improving
+          readability and maintainability.
         </p>
-        <p><strong>What I did</strong></p>
+
+        <p><strong>Enhancement Highlights:</strong></p>
         <ul>
-          <li>Built login / registration backed by <strong>SQLite with EncryptedSharedPreferences</strong> for secure session handling.</li>
-          <li>Added password policy and PBKDF2-hashed credentials with per-user salt.</li>
-          <li>Implemented <strong>role-based access</strong>: the first registered user becomes admin; admins can add, update, delete, and send SMS alerts; regular users are read-only.</li>
-          <li>Stored and updated items locally in a <strong>grid-style inventory</strong> with search, add, edit, and delete actions.</li>
-          <li>Added <strong>SKU-based validation</strong> (max 12 digits, unique index), quantity limits, and input checks to prevent crashes.</li>
-          <li>Added “Remember username” option and improved login error handling.</li>
-          <li>Built an <strong>SMS alert settings screen</strong> with runtime permission handling, “Don’t ask again” flow, and customizable templates.</li>
-          <li>Polished UI with branded <strong>InvenTrack</strong> theme, orange Material buttons, logo on login screen, and better accessibility.</li>
+          <li>Refactored validation structure for clearer separation of responsibilities.</li>
+          <li>Improved input validation and data integrity handling.</li>
+          <li>Enhanced readability through consistent formatting and documentation.</li>
+          <li>Applied structured testing logic suitable for regulated business environments.</li>
         </ul>
 
-        <ul class="meta">
-          <li><strong>Tech:</strong> Java, Android API 34, SQLite / Room, EncryptedSharedPreferences, PBKDF2</li>
-          <li><strong>Skills:</strong> Mobile UX, secure sign-in, MVVM architecture, role-based access, testing</li>
-        </ul>
+        <p><strong>Skills Demonstrated:</strong> Modular design, validation logic, structured testing, documentation
+          refinement.</p>
 
-        <div class="actions">
-          <a class="btn btn--ghost" href="https://github.com/brock936/Inventrack" target="_blank" rel="noopener">V1 – Non-Enhanced</a>
-          <a class="btn" href="https://github.com/brock936/CS499-ePortfolio/tree/main/InvenTrack-Android" target="_blank" rel="noopener">V2 – Enhanced</a>
+        <p class="enhanced-note">
+          <strong>Enhanced Version Notes:</strong> The V2 repository includes refactored modular logic, improved
+          validation handling, and documentation updates reflecting professional standards.
+        </p>
+
+        <div class="artifact-actions">
+          <a class="btn btn-outline" href="https://github.com/Cetutkavul/CS340" target="_blank"
+            rel="noopener">
+            V1 – Original
+          </a>
+
+          <a class="btn" href="https://github.com/Cetutkavul/CS340-CRUD-Enhanced" target="_blank" rel="noopener">
+            V2 – Enhanced
+          </a>
         </div>
       </article>
 
       <!-- Artifact 2 -->
-      <article class="card">
-        <h2>Data Structures and Algorithms</h2>
-        <h3>Course Advising Program (C++)</h3>
+      <article class="enhancement-card">
+        <h3>Algorithms & Data Structures</h3>
+        <h4>CS-300 Course Advising System (C++)</h4>
+
         <p>
-          Command-line program built in C++ that loads and organizes course data to help students and advisors quickly find classes and prerequisites. The tool focuses on efficient searching, clear input validation, and consistent output formatting for a smoother advising experience.
+          This artifact demonstrates efficient data organization using a Binary Search Tree
+          to manage and retrieve course information.
         </p>
-        <p><strong>What I did</strong></p>
+
+        <p><strong>Enhancement Highlights:</strong></p>
         <ul>
-          <li>Loaded course data from a CSV file into an in-memory <strong>Binary Search Tree</strong> keyed by course ID.</li>
-          <li>Implemented <strong>iterative in-order traversal</strong> to print an <strong>alphanumerically sorted</strong> list of courses.</li>
-          <li>Displayed course details (ID, name, prerequisites) for a selected course.</li>
-          <li>Added <strong>error handling</strong> for malformed rows and verified input integrity during loads.</li>
-          <li>Enhanced traversal performance by combining a <strong>BST lookup with an unordered_map index</strong> for O(1) search.</li>
-          <li>Documented runtime complexity (Big-O) for each operation in the project report.</li>
-          <li>Followed <strong>industry best practices</strong> for modular class design, clean separation of data loading, traversal, and display logic.</li>
-          <li>Added <strong>inline documentation and comments</strong> to clarify each function’s purpose, improving readability for future maintainers.</li>
-          <li>Organized project files with a <strong>header/source structure</strong> for easier compilation and updates.</li>
+          <li>Optimized iterative in-order traversal logic.</li>
+          <li>Strengthened input validation and error handling.</li>
+          <li>Improved efficiency analysis with documented runtime complexity.</li>
+          <li>Refined modular organization for maintainability.</li>
         </ul>
 
-        <ul class="meta">
-          <li><strong>Tech:</strong> C++17</li>
-          <li><strong>Skills:</strong> Algorithms, data organization, iterative traversal, error handling, Big-O analysis</li>
-        </ul>
+        <p><strong>Skills Demonstrated:</strong> Data structures, runtime analysis, input validation, structured C++
+          design.</p>
 
-        <div class="actions">
-          <a class="btn btn--ghost" href="https://github.com/brock936/CS300-Projects" target="_blank" rel="noopener">V1 – Non-Enhanced</a>
-          <a class="btn" href="https://github.com/brock936/CS499-ePortfolio/tree/main/Course-Advising-Cpp" target="_blank" rel="noopener">V2 – Enhanced</a>
+        <p class="enhanced-note">
+          <strong>Enhanced Version Notes:</strong> The V2 version improves traversal efficiency, refines modular
+          structure, and includes documented runtime complexity analysis.
+        </p>
+
+        <div class="artifact-actions">
+          <a class="btn btn-outline" href="https://github.com/Cetutkavul/CS300" target="_blank" rel="noopener">
+            V1 – Original
+          </a>
+
+          <a class="btn" href="https://github.com/Cetutkavul/CS300-Enhanced" target="_blank" rel="noopener">
+            V2 – Enhanced
+          </a>
         </div>
+
       </article>
 
       <!-- Artifact 3 -->
-      <article class="card">
-        <h2>Client-Server Development</h2>
-        <h3>MongoDB Dashboard (Python / Dash – Grazioso Salvare)</h3>
+      <article class="enhancement-card">
+        <h3>Databases & Client-Server Systems</h3>
+        <h4>CS-340 Grazioso Salvare MongoDB Dashboard</h4>
+
         <p>
-          A secure data-driven dashboard designed for animal-rescue operations. It connects to MongoDB Atlas using TLS-validated logins, visualizes adoption outcomes on tables, charts, and a map, and gives authorized staff a fast way to explore records while keeping the database protected.
+          This project demonstrates practical database implementation using MongoDB Atlas
+          and a Python Dash interface to interact with structured data.
         </p>
-        <p><strong>What I did</strong></p>
+
+        <p><strong>Enhancement Highlights:</strong></p>
         <ul>
-          <li>Connected securely to <strong>MongoDB Atlas</strong> using <strong>TLS-validated user login</strong> and read-only runtime role (RO).</li>
-          <li>Built <strong>interactive Dash dashboard</strong> with radio-button filters, DataTable, map fallback to Austin, and bar charts for outcomes.</li>
-          <li>Added <strong>Admin Tools panel</strong> with schema and index viewers (RO-safe callbacks).</li>
-          <li>Configured <strong>JSON Schema validation</strong> for <code>aac.animals</code> collection and verified expected rejection on bad input.</li>
-          <li>Proved <strong>RBAC enforcement</strong>: RO user denied inserts/updates/deletes at runtime.</li>
-          <li>Customized branding with <code>assets/grazioso_logo.png</code>, light layout styling, and external port 8052 launch in JupyterLab.</li>
-          <li>Applied <strong>secure coding practices</strong> by validating user inputs at the API layer and escaping data in the UI to prevent injection issues.</li>
-          <li>Used <strong>environment variables</strong> to store secrets (Atlas URI, credentials) instead of hard-coding them in source files.</li>
-          <li>Followed <strong>PEP 8 style guidelines</strong> and added descriptive comments for each callback and query function to ensure maintainability.</li>
+          <li>Implemented schema validation planning for structured data integrity.</li>
+          <li>Applied indexing strategies to improve query performance.</li>
+          <li>Configured role-based access control planning.</li>
+          <li>Refined documentation to align with professional standards.</li>
         </ul>
 
-        <ul class="meta">
-          <li><strong>Tech:</strong> Python 3.12, Dash, MongoDB Atlas (TLS)</li>
-          <li><strong>Skills:</strong> API design, schema validation, RBAC security, data visualization, secure deployment</li>
-        </ul>
+        <p><strong>Skills Demonstrated:</strong> Database management, indexing strategy, structured configuration,
+          client-server interaction.</p>
 
-        <div class="actions">
-          <a class="btn btn--ghost" href="https://github.com/brock936/Portfolio-Journal-CS-340" target="_blank" rel="noopener">V1 – Non-Enhanced</a>
-          <a class="btn" href="https://github.com/brock936/CS499-ePortfolio/tree/main/Grazioso-Dashboard" target="_blank" rel="noopener">V2 – Enhanced</a>
+        <p class="enhanced-note">
+          <strong>Enhanced Version Notes:</strong> The V2 repository includes schema validation planning, indexing
+          improvements, and refined configuration practices.
+        </p>
+
+        <div class="artifact-actions">
+          <a class="btn btn-outline" href="https://github.com/Cetutkavul/CS340" target="_blank"
+            rel="noopener">
+            V1 – Original
+          </a>
+
+          <a class="btn" href="https://github.com/Cetutkavul/CS340-Grazioso-Enhanced" target="_blank" rel="noopener">
+            V2 – Enhanced
+          </a>
         </div>
       </article>
 
     </section>
+
   </main>
 
-  <!-- FOOTER -->
   <footer class="site-footer">
-    <p>© <span id="year"></span> Burak Tutkavul •
-      <a href="https://github.com/brock936" rel="noopener" target="_blank">GitHub</a>
-    </p>
+    <p>© <span id="year"></span> Cisem “Misty” Tutkavul</p>
   </footer>
 
   <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
